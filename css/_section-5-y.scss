@@ -1,0 +1,1280 @@
+// <---------HEader Start------------>
+#header {
+    background-color: #ffff;
+    // height: 100%;
+    width: 100%;
+    // padding: 15px 10px;
+   position: fixed;
+    z-index: 99999;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.35);
+
+    .logo {
+        width: 20%;
+
+
+        .img1 {
+            max-width: 300px;
+
+        }
+
+        .img2 {
+            display: none;
+            max-width: 300px;
+        }
+    }
+
+    .bars {
+        display: none;
+    }
+
+    // <---Drop Down menu Start--->
+    .menu {
+        width: 60%;
+        // color: black;
+
+        ul {
+            height: 100%;
+
+            // <--- Home start--->
+            .home {
+                position: relative;
+                transition: 0.1s all;
+
+                a {
+                    color: black;
+                }
+
+
+                &:hover {
+                    ul {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+
+                ul {
+                    opacity: 0;
+                    visibility: hidden;
+                    position: absolute;
+                    top: 100%;
+                    left: -5%;
+                    width: 220px;
+                    height: 430px;
+                    background-color: #ffff;
+                    text-align: start;
+                    padding: 10px 10px;
+
+
+                    li {
+                        padding: 8px;
+
+                        a {
+                            color: #A8A8A8;
+                            display: block;
+                            font-size: 17px;
+                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-weight: 400;
+                            padding: 0%;
+                            letter-spacing: 1px;
+                            transition: 500ms all;
+
+                            &:hover {
+                                color: $narinci
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            // <---Home end--->
+
+            // <-----SHOP Start---->
+            .shop {
+                a {
+                    color: black;
+                }
+
+                &:hover {
+                    .big-menu {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                }
+
+                .big-menu {
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: 500ms all;
+
+                    width: 96%;
+                    left: 2%;
+                    top: 100%;
+                    height: 300px;
+                    background-color: #ffff;
+                    position: absolute;
+
+                    .text-head {
+                        padding-bottom: 20px;
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            width: 50px;
+                            height: 1px;
+                            background-color: $narinci;
+                            position: absolute;
+                            bottom: 30%;
+                            left: 0%;
+
+
+                        }
+
+                        a {
+                            font-size: 20px;
+                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-weight: 600;
+                            color: #2A2B2C;
+                        }
+
+                    }
+
+                    li {
+                        padding: 5px;
+
+                        a {
+                            color: #A8A8A8;
+                            transition: 500ms all;
+
+                            &:hover {
+                                color: $narinci;
+                            }
+                        }
+                    }
+
+                    .litle-menu-4 {
+                        img {
+                            width: 100%;
+                            border-radius: 4px;
+
+                        }
+                    }
+                }
+            }
+
+            // <----Shop end--->
+            // <----Collect Start
+            .collect {
+                a {
+                    color: black;
+                }
+
+
+                &:hover {
+                    ul {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+
+                ul {
+                    position: absolute;
+                    top: 100%;
+                    left: 2%;
+                    width: 95%;
+                    height: 300px;
+                    background-color: #ffff;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: 500ms all;
+
+                    img {
+                        width: 100%;
+                        // z-index: 999999999999;
+                        border-radius: 5px;
+                        margin-top: 20px;
+                        cursor: pointer;
+                    }
+
+                    p {
+                        padding: 10px 0;
+                        font-size: 17px;
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-weight: bold;
+                        color: $boz;
+                        cursor: pointer;
+                        transition: 0.1s ease-in;
+
+                        &:hover {
+                            color: $narinci;
+                        }
+                    }
+
+
+                }
+            }
+
+            // <---Collect End
+
+            // <----Blog Start---->
+            .blog {
+                position: relative;
+                transition: 1s all;
+
+                a {
+                    color: black;
+                }
+
+                &:hover {
+                    ul {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+
+                ul {
+                    opacity: 0;
+                    visibility: hidden;
+                    position: absolute;
+                    top: 100%;
+                    left: -5%;
+                    width: 220px;
+                    height: 220px;
+                    background-color: #ffff;
+                    text-align: start;
+                    padding: 10px 10px;
+
+
+                    li {
+                        padding: 8px;
+
+                        a {
+                            color: #A8A8A8;
+                            display: block;
+                            font-size: 17px;
+                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-weight: 400;
+                            padding: 0%;
+                            letter-spacing: 1px;
+                            transition: 500ms all;
+
+                            &:hover {
+                                color: $narinci
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            // <----Blog end
+
+
+            // <----Page Start---->
+            .page {
+                position: relative;
+                transition: 500ms all;
+
+                a {
+                    color: black;
+                }
+
+                &:hover {
+                    ul {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+
+                ul {
+                    opacity: 0;
+                    visibility: hidden;
+                    position: absolute;
+                    top: 100%;
+                    left: -5%;
+                    width: 220px;
+                    height: 220px;
+                    background-color: #ffff;
+                    text-align: start;
+                    padding: 10px 10px;
+
+
+                    li {
+                        padding: 8px;
+
+                        a {
+
+                            display: block;
+                            font-size: 17px;
+                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-weight: 400;
+                            padding: 0%;
+                            letter-spacing: 1px;
+                            transition: 500ms all;
+
+                            &:hover {
+                                color: $narinci
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            // <----Page end------>
+
+
+            li {
+                padding: 15px 0;
+
+
+                a {
+                    display: inline-block;
+                    // color: black !important;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+                    font-weight: 600 !important;
+                    text-decoration: none;
+                    margin-right: 40px;
+                    font-size: 18px;
+
+                }
+
+            }
+        }
+    }
+
+    .contact {
+        width: 20%;
+
+        i {
+            color: black !important;
+
+            padding: 11px;
+            font-size: 20px;
+            cursor: pointer;
+            transform: scale(1);
+            transition: 500ms all;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+
+        }
+
+        .shopping-bag {
+            position: relative;
+
+            .shop-0 {
+                position: absolute;
+                top: 0%;
+                right: 0%;
+
+                span {
+                    padding: 2px 4px;
+                    border-radius: 50%;
+                    background-color: $narinci;
+                    font-size: 10px;
+                    color: #ffff;
+                }
+            }
+        }
+    }
+}
+
+// <------------Header End------------>
+
+
+#contact-top {
+    width: 100%;
+    height: 30vh;
+    padding: 100px 0;
+
+    .top-contact {
+        .contact-img {
+            background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/files/breadcumd.jpg?v=1625127338);
+            width: 100%;
+            height: 30vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            justify-content: center;
+
+            h1 {
+                display: flex;
+                justify-content: center;
+                // text-align: center;
+                // align-items: center;
+                padding-top: 3rem;
+                color: white;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 600;
+                font-size: 45px;
+
+            }
+
+            .contact-a {
+                justify-content: center;
+                padding: 10px;
+
+                a {
+                    padding-right: 11px;
+                    text-decoration: none;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 400;
+                    color: white;
+
+                }
+
+                i {
+                    padding-top: 7px;
+                    font-size: 13px;
+                    font-weight: 300;
+                    margin-right: 5px;
+                    color: white;
+
+
+                }
+
+                p {
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: 15px;
+                    color: white;
+                    padding-top: 1px;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// map-section start>?>>>>>>>>>>>
+.map-section {
+    width: 100%;
+    height: 110vh;
+// padding: 5% 0;
+// background-color: #fff;
+    position: relative;
+
+    .compar-map {
+
+        width: 100%;
+        height: 100%;
+
+        iframe {
+            position: absolute;
+            right: 0;
+            top: 0%;
+            width: 70%;
+            height: 800px;
+        }
+
+    }
+
+    .compar-text {
+        position: absolute;
+        width: 380px;
+        height: 460px;
+        background-color: #F2F2F2;
+        border-radius: 13px;
+        padding: 30px 40px;
+        left: 17%;
+        z-index: 100;
+top: 27%;
+        h1 {
+            font-size: 1.75rem;
+            margin-bottom: 20px;
+        }
+
+        .do-you {
+            color: #868686;
+            font-weight: 400;
+            font-size: 15px;
+            margin-bottom: 20px;
+            line-height: 25px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .comp-text-left {
+            i {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+                background-color: #ED6436;
+                color: #fff;
+                margin-right: 20px;
+            }
+        }
+
+        .comp-text-right {
+            margin-bottom: 20px;
+
+            span {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 500;
+            }
+
+            h6 {
+                color: #868686;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        }
+
+
+
+    }
+
+}
+// map-finish>>>>>>>>>>>>>>>>>>>>>
+// regester-sectiomn-start
+
+
+.regester-img{
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    
+    
+    background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/files/page-contact-bg_1728x.jpg?v=1631786229);
+    // background-position: center;
+    // background-size: cover;
+    .regester-box{
+        float: right;
+        margin-right: 50px;
+        margin-top: 50px;
+        
+        h1{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+        }
+        .input-name-email{
+         border-radius: 5px;
+            
+            .name{
+                padding: 10px 80px;
+                border-radius: 5px;
+            border: none;
+
+
+            }
+            .email{
+                padding: 10px 80px;
+                margin-left: 10px;
+                border-radius: 5px;
+            border: none;
+            }
+        }
+        .coment{
+            padding: 100px 258px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: none;
+
+        }
+        .button{
+            margin-top: 20px;
+            
+
+            button{
+                padding: 10px 330px;
+                border: none;
+                border-radius: 5px;
+                background-color: black;
+                
+                span{
+                    text-align: center;
+                    color: white;
+                    font-weight: 400;
+
+
+                }
+            }
+            &:hover{
+                button{
+                    background-color: rgb(197, 129, 4);
+                }
+            }
+        }
+
+    }
+}
+// regester-finsh
+#footer {
+    width: 100%;
+    // height: 100vh;
+    position: relative;
+    background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/files/bg-2_1512x.jpg?v=1626947531);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+
+    // <-------Footer _TOP start
+    .top-footer {
+        color: #ffff;
+        padding: 30px 0;
+
+        .left-top {
+            border-right: 3px solid $narinci-aciq;
+
+            h4 {
+                color: $narinci-aciq;
+                font-size: 30px;
+            }
+        }
+
+        .right-top {
+            position: relative;
+            width: 100%;
+
+
+            .email {
+                width: 100%;
+                height: 50px;
+                border-radius: 30px;
+                color: #ffff;
+                display: flex;
+                padding: 30px 10px;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $tund-boz;
+
+
+                input {
+                    border: none;
+                    background-color: transparent;
+                    width: 100%;
+                    color: #ffff;
+                    outline: none;
+                }
+
+                i {
+                    color: #ffff;
+                    font-size: 20px;
+                    width: 90px;
+                    height: 40px;
+                    background-color: $narinci-aciq;
+                    line-height: 40px;
+                    text-align: center;
+                    border-radius: 30px;
+                    cursor: pointer;
+                }
+            }
+
+            // .latter {
+            //     position: absolute;
+            //     top: 11%;
+            //     right: -15%;
+            //     width: 90px;
+            //     height: 40px;
+            //     background-color: $narinci-aciq;
+            //     line-height: 40px;
+            //     text-align: center;
+            //     border-radius: 30px;
+            //     cursor: pointer;
+
+
+            // }
+        }
+    }
+
+    // <-----------Footer TOP ENd---------->
+    // <----Midle Footer start--->
+    .midle-footer {
+
+        color: #ffff;
+
+        //    <----Petio--->
+        .petio {
+
+            li {
+                margin-top: 20px;
+
+                p {
+                    color: $boz;
+                    font-size: 17px;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+                   
+
+                    a {
+                        color: $narinci-aciq;
+                    }
+                }
+
+
+            }
+
+            .marker {
+                i {
+                    color: $narinci-aciq;
+                    padding-right: 10px;
+                    font-size: 20px;
+                }
+
+                span {
+                    font-size: 19px;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: bold;
+                    margin-left: 10px;
+                    cursor: pointer;
+                    transition: 0.1s ease-in;
+                    &:hover {
+                        color: $narinci-aciq;
+                    }
+
+
+                }
+            }
+
+            .sosial {
+                // padding: 20px 0;
+                display: flex;
+                width: 200px;
+                justify-content: space-around;
+
+                i {
+                    // padding: 20px 0;
+                    // padding-right: 20px;
+                    font-size: 20px;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    border-radius: 50%;
+                    color: black;
+                    background-color: #ffff;
+                    cursor: pointer;
+                    transition: 500ms all;
+
+                    &:hover {
+                        background-color: $narinci-aciq;
+                        color: #ffff;
+                    }
+                }
+            }
+
+
+
+
+        }
+
+
+
+        .accordion {
+            display: none;
+
+            button {
+                width: 100%;
+                // background-color: transparent;
+                color: black;
+                display: flex;
+                justify-content: space-between;
+
+            }
+
+            ul {
+
+
+                display: none;
+
+                li {
+                    color: red;
+
+                }
+
+                &.active {
+                    display: block;
+                }
+            }
+
+        }
+
+
+        //    <----Petio--->
+        .corporate {
+
+            ul {
+                .first-text {
+                    padding-bottom: 15px;
+
+                    i {
+                        font-size: 20px;
+                        display: none;
+                    }
+
+                    a {
+                        color: #ffff;
+                        font-size: 20px;
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-weight: 500;
+
+                    }
+                }
+
+                li {
+                    padding: 6px 0;
+
+                    a {
+                        color: $boz;
+                        font-size: 18px;
+                        transition: 500ms ease;
+
+                        &:hover {
+                            color: $narinci-aciq;
+
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    hr {
+        color: rgba(255, 255, 255, 0.467);
+    }
+
+    // <----Midle Footer end--->
+    .bottom-footer {
+        padding: 10px 0;
+
+        .left-bottom {
+            p {
+                color: $boz;
+                font-size: 15px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: lighter;
+                margin: auto;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+@media (max-width:768px) {
+    #contact-top{
+        width: 100%;
+        height: 100%;
+    }
+    .map-section {
+        padding-top: 40px;
+        position: static;
+        width: 100%;
+        height: 100%;
+
+        .compar-text {
+            position: static;
+            width: 90%;
+            height: 50%;
+            margin: 20px auto;
+            
+        }
+
+        .compar-map {
+            iframe {
+                position: static;
+                width: 100%;
+                height: 500px;
+
+            }
+        }
+    }
+   
+}
+
+@media (min-width:768px)and (max-width:992px) {
+    #contact-top{
+        width: 100%;
+        height: 1005;
+    }
+    
+    .map-section {
+        padding-top: 40px;
+        position: static;
+        height: 100%;
+        width: 100%;
+
+        .compar-text {
+            position: static;
+            width: 90%;
+            height: 50%;
+            margin: 20px auto;
+            
+        }
+
+        .compar-map {
+            iframe {
+                position: static;
+                width: 100%;
+                height: 500px;
+
+            }
+        }
+    }
+  
+}
+
+@media (min-width:992px) {
+    #contact-top{
+        width: 100%;
+        height: 100%;
+    }
+    
+   
+    
+    
+}
+
+@media (max-width:567px) {
+    #header {
+        height: 100%;
+        position: relative;
+        background-color: #fff;
+
+        .logo {
+            .img-1 {
+                display: none;
+            }
+
+            .img2 {
+                display: block;
+                max-width: 150px;
+                height: auto;
+            }
+
+        }
+
+        .contact {
+            i {
+                color: rgba(0, 0, 0, 0.713);
+
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+
+        }
+
+        .bars {
+            display: block;
+            order: -1;
+        }
+
+        .menu {
+            display: none;
+        }
+    }
+    
+    #footer {
+        height: 100%;
+
+        // width: 100%;
+        .top-footer {
+            border: none;
+            margin-top: 40px;
+
+            .left-top {
+                border: none;
+            }
+
+            .right-top {
+                .latter {
+                    left: 47%;
+                }
+            }
+        }
+
+        .midle-footer {
+            .accordion {
+                display: block;
+                text-align: start;
+
+                button {
+                    width: 100%;
+                    background-color: transparent;
+                    border: none;
+                    text-align: start;
+                    margin-bottom: 10px;
+                    color: #fff;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+
+
+
+
+                }
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        color: $boz;
+                        text-align: start;
+                        margin-bottom: 10px;
+                        align-items: flex-start;
+
+
+                    }
+                }
+            }
+
+            .corporate {
+                display: none;
+
+                .first-text {
+                    i {
+                        display: block;
+                    }
+                }
+
+                ul {
+                    li {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .bottom-footer {
+            height: 100%;
+
+
+
+            .right-bottom {
+
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+.regester-img{
+    .regester-box{
+        .input-name-email{
+            .name{
+                padding: 10px 50px;
+            }
+            .email{
+                padding: 10px 50px;
+            }
+        }
+        .coment{
+            padding: 10px 50px;
+        }
+        h1{
+            color: white;
+        }
+    }
+}
+
+
+@media (min-width:567px) and (max-width:768px) {
+    #footer {
+        .midle-footer {
+            .corporate {
+                display: none;
+            }
+
+            .accordion {
+                display: block;
+                text-align: start;
+
+                button {
+                    width: 100%;
+                    background-color: transparent;
+                    border: none;
+                    text-align: start;
+                    margin-bottom: 10px;
+                    color: #fff;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+
+
+
+
+                }
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        color: $boz;
+                        text-align: start;
+                        margin-bottom: 10px;
+                        align-items: flex-start;
+
+
+                    }
+                }
+            }
+
+        }
+
+        .bottom-footer {
+            height: 100%;
+            padding: 10px 0;
+
+            .left-bottom {
+
+                p {
+                    font-size: 15px;
+                    margin: auto;
+                }
+            }
+
+
+
+            .right-bottom {
+
+                img {
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:567px) and (max-width:992px) {
+    #header {
+        height: 100%;
+        width: 80%;
+        margin: auto;
+        position: relative;
+        background-color: #fff;
+
+        .logo {
+            .img-1 {
+                display: none;
+            }
+
+            .img2 {
+                display: block;
+                max-width: 150px;
+                height: auto;
+            }
+
+        }
+
+        .contact {
+            i {
+                color: rgba(0, 0, 0, 0.713);
+
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+
+        }
+
+        .bars {
+            display: block;
+            order: -1;
+            color: rgba(0, 0, 0, 0.713);
+        }
+
+        .menu {
+            display: none;
+        }
+    }
+
+    #footer {
+        height: 100%;
+
+        // width: 100%;
+        .top-footer {
+
+            .left-top {
+                border: none;
+            }
+
+            .right-top {
+                .email {
+                    input {
+                        width: 200px;
+                    }
+                }
+
+                .latter {
+                    left: 47%;
+                }
+            }
+        }
+
+        .bottom-footer {
+            height: 100%;
+            padding: 10px 0;
+
+            .left-bottom {
+
+                p {
+                    font-size: 15px;
+                    margin: auto;
+                }
+            }
+
+
+
+            .right-bottom {
+
+                img {
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+        }
+
+        // .midle-footer{
+
+        // }
+    }
+}
+
+@media(min-width:992px) and (max-width:1200px) {
+    #footer {
+        .bottom-footer {
+            height: 100%;
+            padding: 10px 0;
+
+            .left-bottom {
+
+                p {
+                    font-size: 15px;
+                    margin: auto;
+                }
+            }
+
+
+
+            .right-bottom {
+
+                img {
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+        }
+
+    }
+}

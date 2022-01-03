@@ -1,0 +1,932 @@
+$qirmizi:red;
+$narinci:#E24C43;
+$boz:#A8A8A8;
+$narinci-aciq: #ED6436;
+$tund-boz:#4A4A4A;
+$sari:#FFC107;
+
+@mixin input {
+    .mycheckbox {
+        display: flex;
+        cursor: pointer;
+        justify-content: space-between;
+
+        span {
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            background-color: rgb(202, 201, 201);
+            text-align: center;
+            border-radius: 100%;
+            font-size: 13px;
+        }
+
+        .bags {
+            height: 1.25em;
+            line-height: 1.25em;
+            width: 1.25em;
+            border: 2px solid rgba(0, 0, 0, 0.438);
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            transition: backgroung 0.15s border-color 0.15s;
+
+            &::after {
+                content: "♣";
+                color: black;
+                transform: scale(0);
+                transition: transform 0.15s;
+            }
+
+        }
+
+        .mychechbox_input {
+            height: 25px;
+            font-size: 45px;
+            display: none;
+
+            &:checked+.bags {
+                background-color: #ffff;
+
+                &::after {
+                    transform: scale(1);
+                }
+            }
+
+
+
+        }
+    }
+}
+
+@mixin input3 {
+    .mycheckbox2 {
+        display: flex;
+        cursor: pointer;
+        justify-content: space-between;
+
+        span {
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            background-color: rgb(202, 201, 201);
+            text-align: center;
+            border-radius: 100%;
+            font-size: 13px;
+        }
+
+        .bags2 {
+            height: 1.25em;
+            line-height: 1.25em;
+            width: 1.25em;
+            border: 2px solid rgba(0, 0, 0, 0.438);
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            transition: backgroung 0.15s border-color 0.15s;
+
+            &::after {
+                content: "♦";
+                color: black;
+                transform: scale(0);
+                transition: transform 0.15s;
+            }
+
+        }
+
+        .mychechbox_input {
+            height: 25px;
+            font-size: 45px;
+            display: none;
+
+            &:checked+.bags2 {
+                background-color: blue;
+
+                &::after {
+                    transform: scale(1);
+
+                }
+            }
+
+
+
+        }
+
+        .mychechbox_input-green {
+            height: 25px;
+            font-size: 45px;
+            display: none;
+
+            &:checked+.bags2 {
+                background-color: green;
+
+                &::after {
+                    transform: scale(1);
+
+                }
+            }
+
+        }
+
+        .mychechbox_input-yellow {
+            height: 25px;
+            font-size: 45px;
+            display: none;
+
+            &:checked+.bags2 {
+                background-color: yellow;
+
+                &::after {
+                    transform: scale(1);
+
+                }
+            }
+        }
+    }
+}
+
+@mixin input4 {
+
+    .mycheckbox {
+        display: flex;
+        cursor: pointer;
+        justify-content: space-between;
+
+        span {
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            background-color: rgb(202, 201, 201);
+            text-align: center;
+            border-radius: 100%;
+            font-size: 13px;
+        }
+
+        .bags2 {
+            height: 1.25em;
+            line-height: 1.25em;
+            width: 1.25em;
+            border: 2px solid rgba(0, 0, 0, 0.438);
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            transition: backgroung 0.15s border-color 0.15s;
+
+            &::after {
+                content: "♠";
+                color: black;
+                transform: scale(0);
+                transition: transform 0.15s;
+            }
+
+        }
+
+        .mychechbox_input {
+            height: 25px;
+            font-size: 45px;
+            display: none;
+
+            &:checked+.bags2 {
+                background-color: #ffff;
+
+                &::after {
+                    transform: scale(1);
+                }
+            }
+
+
+
+        }
+    }
+
+}
+
+// BEst SELLER ------->
+@mixin morbi {
+    .morbi {
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.452);
+        padding-top: 20px;
+
+        .left-product {
+            width: 110px;
+            height: 90px;
+            background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/products/product-22_100x.jpg?v=1636281160);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border: 1px solid rgba(0, 0, 0, 0.255);
+            border-radius: 3px;
+            padding: 25px 0;
+            margin-right: 35px;
+
+        }
+
+        .right-product {
+            .star {
+
+
+                i {
+                    color: rgba(128, 128, 128, 0.857);
+                    font-size: 12px;
+                    margin-bottom: 5px;
+
+                }
+
+                span {
+                    font-size: 15px;
+                    color: rgba(0, 0, 0, 0.522);
+                }
+            }
+
+            .texti {
+                h6 {
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 600;
+
+                }
+
+                p {
+                    color: $narinci-aciq;
+                    font-size: 25px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+}
+
+@mixin morrbi2 {
+    .morbi2 {
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.452);
+        padding-top: 20px;
+
+        .left-product {
+            width: 110px;
+            height: 90px;
+            background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/products/product-19_100x.jpg?v=1636281059);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border: 1px solid rgba(0, 0, 0, 0.255);
+            border-radius: 3px;
+            padding: 25px 0;
+            margin-right: 35px;
+
+        }
+
+        .right-product {
+            .star {
+
+
+                i {
+                    color: rgba(128, 128, 128, 0.857);
+                    font-size: 12px;
+                    margin-bottom: 5px;
+
+                }
+
+                span {
+                    font-size: 15px;
+                    color: rgba(0, 0, 0, 0.522);
+                }
+            }
+
+            .texti {
+                h6 {
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 600;
+
+                }
+
+                p {
+                    color: $narinci-aciq;
+                    font-size: 25px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+}
+
+@mixin purus {
+    .purus {
+        padding-top: 20px;
+
+        .left-product {
+            width: 110px;
+            height: 90px;
+            background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/products/product-17_100x.jpg?v=1636280993);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border: 1px solid rgba(0, 0, 0, 0.255);
+            border-radius: 3px;
+            padding: 25px 0;
+            margin-right: 35px;
+
+        }
+
+        .right-product {
+            .star {
+
+
+                i {
+                    color: $sari;
+                    font-size: 12px;
+                    margin-bottom: 5px;
+
+                }
+
+                span {
+                    font-size: 15px;
+                    color: rgba(0, 0, 0, 0.522);
+                }
+            }
+
+            .texti {
+                h6 {
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 600;
+
+                }
+
+                p {
+                    color: $narinci-aciq;
+                    font-size: 25px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+}
+
+// TAGs   mxiin-------->
+@mixin dogf {
+    .dogf-btn {
+        width: 90px;
+        height: 35px;
+        line-height: 30px;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.425);
+        border-radius: 30px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 10px;
+
+
+        &::before {
+            content: "Dog Food";
+            position: absolute;
+            right: 0%;
+            top: 0%;
+            background-color: $narinci-aciq;
+            width: 0%;
+            height: 100%;
+            transition: 0.3s all ease;
+            cursor: pointer;
+            color: #fff;
+            font-size: 13px;
+
+        }
+
+        &:hover {
+
+            // border: 1px solid $narinci-aciq;
+            &::before {
+                width: 100%;
+
+
+                a {
+                    color: #fff;
+
+                }
+            }
+        }
+
+        a {
+            display: inline-block;
+            color: black;
+            z-index: 9999;
+            font-size: 13px;
+
+        }
+    }
+}
+
+@mixin dogt {
+    .dogt-btn {
+        width: 90px;
+        height: 35px;
+        line-height: 30px;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.425);
+        border-radius: 30px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+
+
+        &::before {
+            content: "Dog Toys";
+            position: absolute;
+            right: 0%;
+            top: 0%;
+            background-color: $narinci-aciq;
+            width: 0%;
+            height: 100%;
+            transition: 0.3s all ease;
+            cursor: pointer;
+            color: #fff;
+            font-size: 13px;
+
+        }
+
+        &:hover {
+
+            // border: 1px solid $narinci-aciq;
+            &::before {
+                width: 100%;
+
+
+                a {
+                    color: #fff;
+
+                }
+            }
+        }
+
+        a {
+            display: inline-block;
+            color: black;
+            z-index: 9999;
+            font-size: 13px;
+
+        }
+    }
+}
+
+@mixin fishf {
+    .fishf-btn {
+        width: 90px;
+        height: 35px;
+        line-height: 30px;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.425);
+        border-radius: 30px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+
+
+        &::before {
+            content: "Fish Food";
+            position: absolute;
+            right: 0%;
+            top: 0%;
+            background-color: $narinci-aciq;
+            width: 0%;
+            height: 100%;
+            transition: 0.3s all ease;
+            cursor: pointer;
+            color: #fff;
+            font-size: 13px;
+
+        }
+
+        &:hover {
+
+            // border: 1px solid $narinci-aciq;
+            &::before {
+                width: 100%;
+
+
+                a {
+                    color: #fff;
+
+                }
+            }
+        }
+
+        a {
+            display: inline-block;
+            color: black;
+            z-index: 9999;
+            font-size: 13px;
+
+        }
+    }
+}
+
+// <-------Shop Zone------->
+@mixin shop-bag {
+    &:hover {
+
+        // z-index: 0;
+        .img-hidden {
+            opacity: 1;
+            visibility: visible;
+            // z-index: 9999999;
+        }
+
+        .srch {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .img1 {
+
+        border: 1px solid rgba(0, 0, 0, 0.433);
+        border-radius: 6px;
+        cursor: pointer;
+
+
+    }
+
+
+
+
+    .img-hidden {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+
+        cursor: pointer;
+        border: 1px solid rgba(0, 0, 0, 0.433);
+        border-radius: 6px;
+        transition: 500ms all ease;
+        opacity: 0;
+        visibility: hidden;
+
+    }
+
+    .srch {
+        display: grid;
+        position: absolute;
+        bottom: 55%;
+        right: 5%;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s all ease-in-out;
+
+        i {
+            width: 38px;
+
+            height: 35px;
+            background-color: #fff;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 0, 0, 0.241);
+            line-height: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            font-size: 20px;
+
+            &:hover {
+                background-color: $narinci-aciq;
+                color: #fff;
+            }
+        }
+    }
+
+}
+@mixin shop-bag2 {
+    .shop-bag2 {
+        // padding-left: 20px;
+        position: relative;
+
+
+        &:hover {
+
+            // z-index: 0;
+            .img-hidden {
+                opacity: 1;
+                visibility: visible;
+                // z-index: 9999999;
+            }
+
+            .srch {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        .img1 {
+
+            border: 1px solid rgba(0, 0, 0, 0.433);
+            border-radius: 6px;
+            cursor: pointer;
+
+
+        }
+
+
+
+
+        .img-hidden {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+
+            cursor: pointer;
+            border: 1px solid rgba(0, 0, 0, 0.433);
+            border-radius: 6px;
+            transition: 500ms all ease;
+            opacity: 0;
+            visibility: hidden;
+
+        }
+
+        .srch {
+            display: grid;
+            position: absolute;
+            bottom: 55%;
+            right: 5%;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.2s all ease-in-out;
+
+            i {
+                width: 38px;
+
+                height: 35px;
+                background-color: #fff;
+                border-radius: 50%;
+                border: 1px solid rgba(0, 0, 0, 0.241);
+                line-height: 30px;
+                text-align: center;
+                cursor: pointer;
+                transition: 0.3s all ease-in-out;
+                font-size: 20px;
+
+                &:hover {
+                    background-color: $narinci-aciq;
+                    color: #fff;
+                }
+            }
+        }
+
+
+    }
+
+}
+
+
+@mixin shop-bag13 {
+    .shop-bag13 {
+        // padding-left: 20px;
+        position: relative;
+
+
+        &:hover {
+
+            // z-index: 0;
+            .img-hidden {
+                opacity: 1;
+                visibility: visible;
+                // z-index: 9999999;
+            }
+
+            .srch {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        .img1 {
+
+            border: 1px solid rgba(0, 0, 0, 0.433);
+            border-radius: 6px;
+            cursor: pointer;
+
+
+        }
+
+
+
+
+        .img-hidden {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+
+            cursor: pointer;
+            border: 1px solid rgba(0, 0, 0, 0.433);
+            border-radius: 6px;
+            transition: 500ms all ease;
+            opacity: 0;
+            visibility: hidden;
+
+        }
+
+        .srch {
+            display: grid;
+            position: absolute;
+            bottom: 55%;
+            right: 5%;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.2s all ease-in-out;
+
+            i {
+                width: 38px;
+
+                height: 35px;
+                background-color: #fff;
+                border-radius: 50%;
+                border: 1px solid rgba(0, 0, 0, 0.241);
+                line-height: 30px;
+                text-align: center;
+                cursor: pointer;
+                transition: 0.3s all ease-in-out;
+                font-size: 20px;
+
+                &:hover {
+                    background-color: $narinci-aciq;
+                    color: #fff;
+                }
+            }
+        }
+
+
+    }
+}
+@mixin section-new {
+    .section-new {
+        padding-top: 80px;
+        width: 100%;
+        height: 45vh;
+        background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/files/breadcumd_1512x.jpg?v=1625127338);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // padding: 120px 0;
+        // padding-bottom: 80px;
+        // padding: 60px 0;
+    
+        .center-boxes {
+            width: 80%;
+            margin: auto;
+            .text-center {
+                width: 100%;
+                height: 100%;
+                // margin-bottom: 20px;
+                color: #fff;
+    
+                h1 {
+                    font-size: 50px;
+                }
+    
+                ul {
+                    li {
+                        i {
+                            padding: 0px 5px;
+                        }
+                    }
+                }
+    
+            }
+    
+        }
+    
+     
+    
+    
+    
+    
+    
+    }
+}
+
+// recent---posts--------
+
+@mixin h5 {
+    h5 {
+        position: absolute;
+        bottom: 97%;
+        left: 20%;
+        transform: translate(-20%);
+        padding: 0 12px;
+        background-color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 23px;
+        font-weight: 500;
+    }
+}
+@mixin blog {
+    margin-top: 20px;
+    border-bottom: 1px dashed black;
+    width: 100%;
+
+}
+@mixin blog-texts {
+    .travel-img {
+        margin: 0 20px;
+
+        // width: 200px;
+        // height: 80px;
+        img {
+            max-width: 200px;
+            height: 50px;
+            border-radius: 5px;
+
+        }
+
+    }
+
+    .travel-text {
+        padding: 0%;
+        margin: 0%;
+        display: grid;
+        justify-content: flex-start;
+        span {
+            font-size: 12px;
+           
+        }
+
+        p {
+            font-size: 14px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            color: black;
+            transition: 0.3s all ease-in;
+            cursor: pointer;
+
+            &:hover{
+                color: $narinci-aciq;
+            }
+        }
+    }
+}
+// recent---posts--------
+
+// -----blog-----
+
+@mixin travelling-text{
+    .travelling-text {
+           
+        span{
+            color: $boz;
+        }
+        p{
+            color: $boz;
+            max-width: 100%;
+            font-size: 14px;
+
+        }
+
+        .travelling-bottom {
+            span{
+                margin-right: 10px;
+                color: $boz;
+            }
+            i{
+                color: $boz;
+                margin:0 5px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: 0.2s all ease-in-out;
+                &:hover{
+                    color: $narinci-aciq;
+                }
+            }
+            .text-button{
+              
+                a{
+                    width: 120px;
+                    height: 40;
+                    line-height: 40px;
+                    display: block;
+                   
+                    text-align: center;
+                    background-color: $narinci-aciq;
+                    border-radius: 30px;
+                    color: #fff;
+                    text-decoration: none;
+                    transition: 0.3s all ease-in-out;
+                    &:hover{
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+// -----blog-----
+
